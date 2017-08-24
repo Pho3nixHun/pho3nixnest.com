@@ -1,0 +1,12 @@
+<div class="header layout-row">
+    <div class="glass-background"></div>
+    <div class="logo layout-row layout-align start-center">
+        <img src="/assets/pho3nix_256.png">
+    </div>
+    <button-group [align]="menuAlign" [buttons]="menuItems" *ngIf="menuItems.length > 1" class="flex hide-gt-sm menuItems"></button-group>
+    <div class="layout-row layout-align-start-center hide-sm hide-xs" *ngIf="showSearchbar">
+        <input placeholder="Looking for something?" class="flex" />
+        <i class="material-icons">search</i>
+    </div>
+    <button-group [align]="socialAlign" [buttons]="socialLinks" [ngClass]="{ 'hide-sm': menuItems.length > 1, 'hide-xs': menuItems.length > 1  }" class="flex socialLinks"></button-group>
+</div>

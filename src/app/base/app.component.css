@@ -1,0 +1,77 @@
+@keyframes moveBackground { 
+    0%{background-position:0% 90%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 90%}
+}
+
+:host {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-width: 600px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4b7282+0,49646d+10,6899c5+50,6899c5+50,6899c5+100 */
+    background: linear-gradient(45deg, #4b7282 0%,#49646d 10%,#6899c5 50%,#6899c5 50%,#6899c5 100%);
+    animation: moveBackground 20s ease infinite;
+    background-size: 400% 400%;
+    /*
+    background: linear-gradient(45deg, #27293F 0%,#232639 10%,#2B3F55 50%,#232639 50%,#27293F 100%);
+    background-image: url('https://source.unsplash.com/random');
+    background-size: cover;
+    */
+}
+:host > div {
+    padding: 3px;
+    transition: padding 200ms ease;
+}
+@media (min-width: 960px) {
+    :host > div {
+        padding: 25px;
+    }
+}
+
+.content {
+    border-radius: 0 0 3px 3px;
+    overflow: hidden;
+    position: relative;
+    padding: 0 5px 5px 5px;
+    border-top: none;
+}
+
+.content:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: -3px;
+    right: -3px;
+    left: -3px;
+    background: rgba(128, 192, 255, 1);
+    filter: blur(75px);
+    -webkit-backdrop-filter: blur(75 px);    
+}
+
+app-header {
+    z-index: 2;
+}
+
+app-sidebar {
+    border-radius: 3px 0 0 3px;
+}
+
+.infobar {
+    border-radius: 0 3px 3px 0;
+}
+
+app-sidebar, .infobar {
+    background: #f4f4f4;
+    width: 256px;
+}
+
+app-article {
+    background: white;
+    box-shadow: 0px 75px 100px -25px rgba(0,0,0,0.75);
+}
+
+app-sidebar, .infobar, app-article {
+    z-index: 1;
+}

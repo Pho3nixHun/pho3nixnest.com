@@ -1,0 +1,75 @@
+@import url('/assets/tooltip.css');
+
+:host ::ng-deep [data-tooltip]:before,
+:host ::ng-deep [data-tooltip]:after {
+    top: 150%;
+}
+
+:host {
+    overflow: auto;
+}
+
+:host ::ng-deep article {
+    padding: 45px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+:host ::ng-deep hr {
+    border: 0;
+    border-top: 1px solid #EDEBEB;
+    margin-left: -90px;
+    margin-right: -90px;
+}
+
+:host ::ng-deep h1, h2, h3 {
+    font-weight: 500;
+    font-family: 'Cardo';
+}
+
+:host ::ng-deep h1 {
+    font-size: 250%;
+}
+
+:host ::ng-deep h2 {
+    font-size: 175%;
+}
+
+:host ::ng-deep h3 {
+    font-size: 133%;
+}
+
+:host ::ng-deep a {
+    text-decoration: none;
+    color: #29A0EB;
+}
+:host ::ng-deep h1 + blockquote {
+    margin-top: 0;
+}
+
+:host ::ng-deep blockquote {
+    margin: 0;
+    background: #F1F3F4;
+    color: #A3AABB;
+    font-size: 9pt;
+    font-weight: 600;
+    padding: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 50px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: inline-block;
+}
+:host ::ng-deep blockquote p {
+    margin: 0;
+}
+
+:host ::ng-deep blockquote a {
+    border-bottom: 1px dotted;
+    color: inherit;
+}
+
+:host ::ng-deep dp {
+    line-height: 1.5em;
+}

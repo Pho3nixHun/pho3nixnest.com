@@ -1,0 +1,33 @@
+@import url('/assets/tooltip.css');
+
+div {
+    height: 100%;
+}
+
+i.mono-social-icon {
+    font-size: 32px;
+}
+
+a {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+a,
+a > * {
+    height: 100%; 
+}
+a > * {
+    display:flex;
+    align-items: center; /* Vertical center alignment */
+    text-align: center; /* Horizontal center alignment */
+}
+
+a > span {
+    margin-left: 4px;
+    white-space: nowrap;
+}
+
+a:hover {
+    background: rgba(255, 255, 255, .25);
+}

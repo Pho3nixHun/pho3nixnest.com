@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('MonoSocialIconsFont-1.10.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+i.mono-social-icon {
+    font-family: 'Mono Social Icons Font';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}

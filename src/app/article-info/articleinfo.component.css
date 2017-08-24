@@ -1,0 +1,51 @@
+:host {
+    overflow: hidden;
+}
+
+section {
+    position: relative;
+    font-size: 75%;
+    color: #ACB0B2;
+    padding: 4px;
+}
+
+section {
+    border-bottom: 1px solid #EDEBEB;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 {
+    font-size: 90%;
+}
+
+.keyValue:before {
+    content: attr(data-title);
+    display: none;
+}
+
+p span:first-of-type {
+    color: #3D4548;
+    font-weight: 600;
+    text-align: right;
+}
+p span:last-of-type {
+    text-align: left;
+    text-indent: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #29A0EB;
+}
+
+p {
+    line-height: 1.5em;
+}

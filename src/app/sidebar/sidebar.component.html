@@ -1,0 +1,4 @@
+<nav #container class="layout-column">
+    <div #highlight class="highlight" [ngClass]="{ loading: isLoading }"></div>
+    <a *ngFor="let menuitem of menuItems" [ngClass]="{ selected: menuitem.selected, disabled: menuitem.disabled }" (click)="menuitem.disabled || select(menuitem, $event)">{{ menuitem.text }}</a>
+</nav>

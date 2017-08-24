@@ -1,0 +1,5 @@
+<section *ngFor="let section of sections">
+    <h1 *ngIf="section.title"> {{section.title}} </h1>
+    <img *ngIf="section.poster" [src]="section.poster" />
+    <p *ngFor="let entry of section.entries" class="layout-row"><span class="flex-30">{{entry.key}}</span><span class="flex">{{entry.value}}</span></p>
+</section>

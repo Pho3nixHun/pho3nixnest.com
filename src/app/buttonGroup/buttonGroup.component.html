@@ -1,0 +1,6 @@
+<div class="layout-row" [ngClass]="getLayoutAlign()">
+    <a class="layout-row" *ngFor="let button of buttons" [ngClass]="{ selected: button.selected, disabled: button.disabled }" (click)="button.disabled || click(button, $event)" [attr.data-tooltip]="button.label">
+        <i class="{{button.iconClass || iconClass}}">{{ button.icon }}</i>
+        <span *ngIf="button.text">{{ button.text }}</span>
+    </a>
+</div>

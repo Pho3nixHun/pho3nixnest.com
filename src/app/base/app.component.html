@@ -1,0 +1,11 @@
+<div class="layout-column layout-fill">
+  <app-header [socialLinks]="socialLinks" [menuItems]="menuItems" [showSearchbar]="menuItems.length > 1"></app-header>
+  <div class="content flex layout-row">
+    <app-sidebar [menuItems]="menuItems" *ngIf="menuItems.length > 1" class="hide-sm hide-xs"></app-sidebar>
+    <app-article [content]="article.content" class="flex"></app-article>
+    <div class="infobar hide-md hide-sm hide-xs layout-column">
+      <article-info [sections]="article.meta"></article-info>
+      <app-anchormap class="flex"></app-anchormap>
+    </div>
+  </div>
+</div>

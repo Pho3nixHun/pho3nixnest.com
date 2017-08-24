@@ -1,0 +1,89 @@
+.header {
+    height: 48px;
+    position: relative;
+    border-radius: 3px 3px 0 0;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.header * {
+    z-index: 1;
+}
+.glass-background {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    overflow: hidden;
+}
+.glass-background:before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    bottom: -12px;
+    right: -12px;
+    left: -12px;
+    background: rgba(128, 192, 255, 1);
+    filter: blur(75px);
+    -webkit-backdrop-filter: blur(75 px);
+}
+
+.header .logo img{
+    padding-top: 4px; 
+    height: 40px;
+    width: 40px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.header i {
+    color: white;
+}
+
+i.mono-social-icon {
+    font-size: 32px;
+}
+
+.header button {
+    height: 100%;
+}
+.header > div > button:hover {
+    background: rgba(255, 255, 255, .25);
+}
+
+.header input {
+    margin-left: 24px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .75);
+    line-height: 16pt;
+    margin-right: 12px;
+    transition: opacity 300ms ease;
+    opacity: .75;
+}
+
+.header input:focus {
+    opacity: 1;
+}
+
+.header input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(255, 255, 255, .5);
+}
+.header input::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(255, 255, 255, .5);
+}
+.header input:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(255, 255, 255, .5);
+}
+.header input:-moz-placeholder { /* Firefox 18- */
+  color: rgba(255, 255, 255, .5);
+}
+
+button-group {
+    color: white;
+}
+
+button-group.menuItems i {
+    color: hsl(359, 91%, 36%);
+}
